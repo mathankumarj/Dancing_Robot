@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+
+body{
+    font-family: "Montserrat", sans-serif;
+    background: black ;
+}
+
+h1{
+    color: yellow;
+    border-color: black;
+    border-radius: 2px solid black;
+    text-align: center;
+}
+.container{
+    height: 500px;
+    width: 1150px;
+    border: 5px solid white;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.face{
+    height: 125px;
+    width: 150px;
+    background : chartreuse;
+    margin: auto;
+    margin-top: 20px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transition: width 1s ease;
+}
+
+.container:hover .face{
+    background-color: purple;
+    transfrom: translateX(20px);
+    animation: face   1s infinite;
+}
+@keyframes face {
+    0%{
+        transform: translateX(-20px);
+    }
+    25%{
+        transform: translateX(20px);
+    }
+    50%{
+        transform: translateX(-20px);
+    }
+    75%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(-20px);
+    }
+    
+}
+
+.eyes{
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+    padding-top: 30%;
+
+}
+
+.leye{
+    height: 35px;
+    width: 35px;
+    background: chartreuse;
+    border-radius: 50%;
+    margin-top: 20%;
+    margin: auto;
+    border-radius: 50%;
+}
+
+
+
+.reye{
+    height: 35px;
+    width: 35px;
+    background: chartreuse;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin:auto;
+    border-radius: 50%;
+}
+
+.container:hover .reye{
+    animation: reye 1s infinite;
+}
+@keyframes reye {
+    0%{
+        height: 0px;
+        background: yellow;
+    }
+    25%{
+        height: 35px;
+        background: orangered;   
+     }
+    50%{
+        height: 0px;
+        background: crimson;
+        }
+    75%{
+        height: 35px;
+        background: chartreuse;   
+     }
+    100%{
+    
+        height: 0px;
+    background: violet;
+    }
+}
+
+.container:hover .leye{
+    animation: leye 1s infinite;
+}
+@keyframes leye {
+    0%{
+        height: 35px;
+        background: yellow;
+    }
+    25%{
+        height: 0px;
+        background: orangered;   
+     }
+    50%{
+        height: 35px;
+        background: crimson;
+        }
+    75%{
+        height: 0px;
+        background: chartreuse;   
+     }
+    100%{
+    
+        height: 0px;
+    background: violet;
+    }
+}
+.body{
+    display: flex;
+    width: 250px;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 10px;
+}
+
+
+.larm{
+    height: 85px;
+    width: 23px;
+    background-color: chartreuse;
+    border-radius: 30%;
+    margin-top: 15px;
+}
+.container:hover .larm{
+    animation: larm 1s infinite;
+}
+@keyframes larm {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background-color: red;
+    }
+    25%{
+        transform: rotate(90deg);
+        transform-origin: top center; 
+        background: greenyellow;
+     }
+    50%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background: green;
+        }
+    75%{
+        transform: rotate(90deg);
+        transform-origin: top center;
+        background: blue;   
+     }
+    100%{
+    
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background: white;
+    }
+} 
+
+.rarm{
+    height: 85px;
+    width: 23px;
+    background-color: chartreuse;
+    border-radius: 30%;
+    margin-top: 15px;
+}
+
+.container:hover .rarm{
+    animation: rarm 1s infinite;
+}
+@keyframes rarm {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background: red;
+    }
+    25%{
+        transform: rotate(90deg);
+        transform-origin: top center; 
+        background: greenyellow;
+     }
+    50%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background: green;
+        }
+    75%{
+        transform: rotate(90deg);
+        transform-origin: blue;   
+     }
+    100%{
+    
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background: white;
+    }
+}
+
+.center{
+    height: 125px ;
+    width: 150px;
+    background-color: chartreuse;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+.container:hover .center{
+    animation: center 0.7s infinite;
+    border-radius: 50%;
+}
+@keyframes center {
+    0%{
+        transform: rotate(0deg);
+        /* transform-origin: top center; */
+        background: orangered;
+    }
+    25%{
+        transform: rotate(0deg);
+        /* transform-origin: top center;  */
+        background: blue;
+     }
+    50%{
+        transform: rotate(0deg);
+        /* transform-origin: top center; */
+        background: yellow;
+        }
+    75%{
+        transform: rotate(deg);
+        /* transform-origin: top center; */
+        background: green;   
+     }
+    100%{
+    
+        transform: rotate(360deg);
+        /* transform-origin: top center; */
+        background: greenyellow;
+    }
+}
+
+.legs{
+    display: flex;
+    width: 150px;
+    justify-content: space-evenly;
+    padding-top: 40px;
+    margin: auto;
+    margin-top: -4%;
+}
+
+
+.rleg{
+    height: 85px;
+    width: 23px;
+    background-color: chartreuse;
+    border-radius: 30%;
+    margin-top: 15px;
+}
+
+.container:hover .rleg{
+    animation: rleg 1s infinite;
+}
+@keyframes rleg {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background: red;
+    }
+    25%{
+        transform: rotate(-90deg);
+        transform-origin: top center; 
+        background: greenyellow;
+     }
+    50%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background: green;
+        }
+    75%{
+        transform: rotate(-90deg);
+        transform-origin: top center;  
+        background: blue; 
+     }
+    100%{
+    
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background: white;
+    }
+}
+
+.lleg{
+    height: 85px;
+    width: 23px;
+    background-color: chartreuse;
+    border-radius: 30%;
+    margin-top: 15px;
+}
+
+
+.container:hover .lleg{
+    animation: lleg 1s infinite;
+}
+@keyframes lleg {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background: red;
+    }
+    25%{
+        transform: rotate(-90deg);
+        transform-origin: top center; 
+        background: green;
+     }
+    50%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background: blue;
+        }
+    75%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+        background: yellow;   
+     }
+    100%{
+    
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background: white;
+    }
+}
+
+body:hover{
+    animation: body 0.2s infinite;
+}
+
+@keyframes body{
+    0%{
+        background: red;
+    }
+    50%{
+        background: green;
+    }
+    75%{
+        background: blue;
+    }
+    100%{
+        background: white;
+    }
+} 
+/*
+transition -
+transform  -
+animation  - time intervel
+Hover    - Move 
+*/
